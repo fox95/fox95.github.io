@@ -8,11 +8,8 @@ notihng here yet
 </h1>
         <form onSubmit="WriteToFile(this)"> 
 <label>Type your first name:</label> 
-<input type="text" name="FirstName" id="firstName" size="20"> 
- 
-<label>Type your last name: </abel> 
-<input type="text" name="LastName" id="lastName" size="20"> 
- 
+<input type="text" name="Question" id="Question" size="20"> 
+
 <input type="submit" value="submit"> 
 </form> 
   <script>
@@ -21,11 +18,10 @@ notihng here yet
     set fso = CreateObject("Scripting.FileSystemObject");  
     set s   = fso.CreateTextFile("/questions.txt", True); 
  
-    var firstName = document.getElementById('FirstName'); 
-    var lastName  = document.getElementById('lastName'); 
+    var Question = document.getElementById('Question'); 
  
-    s.writeline("First Name :" + FirstName); 
-    s.writeline("Last Name :" + lastName); 
+ 
+    s.writeline("Q :" + Question);  
  
     s.writeline("-----------------------------"); 
     s.Close(); 
