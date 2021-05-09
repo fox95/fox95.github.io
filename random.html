@@ -1,10 +1,39 @@
-  
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <title>website</title>
 <body style="background-color:black;">
 <h1>
 <font color='purple'>  
-hmm
+
+  <?php
+
+
+$randomThings = array(
+    'random thing 1',    
+    'random thing 2',    
+    'random thing 3',    
+    'random thing 4',    
+    'random thing 5',    
+    'random thing 6',    
+    'random thing 7 ',    
+);
+
+?>
+
+
+
+
+<!-- REST OF YOUR PAGE -->
+
+<?php
+
+echo $randomThings[mt_rand(0,count($randomThings)-1)];
+
+?>
+
+<!-- OTHER STUFF -->
+  
 </h1>
    
 </body> </html>
