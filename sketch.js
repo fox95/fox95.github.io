@@ -6,7 +6,7 @@ let nums;
 function setup() {
   nums = createVector(10, 10);
   colorMode(HSB, nums.x * nums.y, 1, 1);
-  createCanvas(800, 800, WEBGL);
+  createCanvas(1400, 800, WEBGL);
   cam = createEasyCam();
   cam.state.distance = 2000;
   cam.state.center = [width / 1.5, height / 2, 0];
